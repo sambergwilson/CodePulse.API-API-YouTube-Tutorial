@@ -46,7 +46,7 @@ namespace CodePulse.API.Repositories.Implementation
             return category;
         }
 
-        public async Task<List<Category>> GetAllAsync(Category categories)
+        public async Task<List<Category>> GetAllAsync()
         {
             List<Category> result = _context.Categories.ToList();
 
